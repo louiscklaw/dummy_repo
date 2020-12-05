@@ -7,7 +7,3 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: ./fail_build.sh
-    - uses: louiscklaw/fastmac-tryout/ssh@master
-      with:
-        ssh_key: ${{ secrets.SSH_KEY }}
-        key_file: id_ecdsa
